@@ -1,0 +1,401 @@
+@charset "utf-8";
+body, ul, dl, dd, dt, ol, li, p, h1, h2, h3, h4, h5, h6, textarea, form, select, fieldset, table, td, div, input{margin:0;padding:0;-webkit-text-size-adjust:none}
+h1, h2, h3, h4, h5, h6{font-size:12px;font-weight:normal}
+body>div{margin:0 auto}
+div{text-align:left}
+a img{border:0}
+body{color:#333;text-align:center;font:12px "微软雅黑";}
+ul,ol,li{list-style-type:none;vertical-align:0}
+a{color:white;text-decoration:none;}
+/*a{outline-style:none;color:#535353;text-decoration:none}
+a:hover{color:#D40000;text-decoration:none}*/
+.clear{height:0;overflow:hidden;clear:both}
+   .mulu
+        {background-color:black;width:100%;height:73px;position:absolute;top:0px;padding-top:12px;}
+        #first
+        {position:absolute;top:0px;left:300px;background-color:black;border:solid gray 2px;width:80px;height:41px;font-size:30px;font-family:楷体;padding:20px 60px;color:white;transition:0.5s;}
+        #first:hover
+        {background:#ee7700;}
+        #second{position:absolute;top:0px;left:500px;background-color:black;border:solid gray 2px;width:136px;height:41px;font-size:30px;font-family:楷体;padding:20px 60px;color:white;transition:0.5s;}
+        #second:hover{background:#ee7700;}
+        #third
+        {position:absolute;top:0px;left:700px;background-color:black;border:solid gray 2px;width:138px;height:41px;font-size:30px;font-family:楷体;padding:20px 60px;color:white;transition:0.5s;}
+        #third:hover{background:#ee7700;}
+        #forth
+        {position:absolute;top:0px;left:900px;background-color:black;border:solid gray 2px;width:138px;height:41px;font-size:30px;font-family:楷体;padding:20px 60px;color:white;transition:0.5s;}
+        #forth:hover{background:#ee7700;}
+        #fifth
+        {position:absolute;top:0px;left:1100px;background-color:black;border:solid gray 2px;width:100px;height:41px;font-size:30px;font-family:楷体;padding:20px 60px;color:white;transition:0.5s;}
+        #fifth:hover{background:#ee7700;}
+
+
+.chun{
+	position: absolute;
+	left: 0%;
+	top: 23%; 
+	-webkit-transition: -webkit-transform 1s ease-out;
+           
+}
+.chun:hover{
+		
+	-webkit-transform: rotate(360deg);             
+}
+.xia{
+	position: absolute;
+	left: 0%;
+	top: 78%;
+	-webkit-transition: -webkit-transform 1s ease-out;
+}
+.xia:hover{
+		
+	-webkit-transform: rotate(-360deg);             
+}
+.qiu{
+	position: absolute;
+	right: 0%;
+	top: 23%;
+	-webkit-transition: -webkit-transform 1s ease-out;
+}
+.qiu:hover{
+		
+	-webkit-transform: rotate(-360deg);             
+}
+.dong{
+	position: absolute;
+	right: 0%;
+	top: 78%;
+	-webkit-transition: -webkit-transform 1s ease-out;
+}
+.dong:hover{
+		
+	-webkit-transform: rotate(360deg);             
+}
+
+/*#container{
+	position: absolute;
+	top: 15%;
+	left:22%;
+	width:1060px;
+	height:1910px;
+	padding-left:10px;
+	padding-top:10px;
+	margin-right:auto;
+	margin-left:auto;
+	/*-moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	filter:progid:DXImageTransform.Microsoft.shadow(direction=120, color=#000000, strength=4);
+}*/
+.main_box{
+	background:red;
+	/* Important parameters of style start */
+	position:relative;
+	overflow:hidden;
+	float:left;
+	/* Important parameters of style end */
+	margin-right:10px;
+	margin-bottom:10px;
+}
+.main_box > img{
+	display:block;
+	z-index:10;
+}
+.popup{
+	/* Important parameters of style start */
+	display:none;
+	text-align:center;
+	position:absolute;
+	z-index:40;
+	/* Important parameters of style end */
+	height:70px;
+	width:70px;
+	background:#753ffe url(../images/up.png) no-repeat center center;
+	-moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.5);/* Firefox */
+	-webkit-box-shadow:0 0 5px rgba(0, 0, 0, 0.5);/* Safari and Chrome */
+	box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
+ filter:progid:DXImageTransform.Microsoft.shadow(direction=120, color=#000000, strength=2);
+}
+.popup2{
+	/* Important parameters of style start */
+	display:none;
+	text-align:center;
+	position:absolute;
+	z-index:40;
+	/* Important parameters of style end */
+	height:70px;
+	width:70px;
+	background:#fe3f3f url(../images/down.png) no-repeat center center;
+	-moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.5);/* Firefox */
+	-webkit-box-shadow:0 0 5px rgba(0, 0, 0, 0.5);/* Safari and Chrome */
+	box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
+ filter:progid:DXImageTransform.Microsoft.shadow(direction=120, color=#000000, strength=2);
+}
+.r_board{
+	/* Important parameters of style start */
+	display:none;
+	text-align:center;
+	position:absolute;
+	z-index:40;
+	/* Important parameters of style end */
+	height:60px;
+	width:200px;
+	background:#2BBFBD;
+	-moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.5);/* Firefox */
+	-webkit-box-shadow:0 0 5px rgba(0, 0, 0, 0.5);/* Safari and Chrome */
+	box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
+ filter:progid:DXImageTransform.Microsoft.shadow(direction=120, color=#000000, strength=2);
+}
+.overlayPop{
+	/* Important parameters of style start */
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+	margin:0;
+	/* Important parameters of style end */	
+
+	background:#000;
+}
+/* Text Content */
+
+.overlayText{
+	/* Important parameters of style start */
+	position:absolute;
+	overflow:hidden;
+	display:none;
+	z-index:20;
+	margin:0;
+	/* Important parameters of style end */	
+
+	background:#000;
+	color:white;
+}
+.overlayRubTop{
+	/* Important parameters of style start */
+	position:absolute;
+	overflow:hidden;
+	z-index:20;
+	margin:0;
+	border:0 none;
+	/* Important parameters of style end */
+	background:#000;
+}
+.overlayRubBottom{
+	/* Important parameters of style start */
+	position:absolute;
+	overflow:hidden;
+	z-index:20;
+	margin:0;
+	border:0 none;
+	/* Important parameters of style end */	
+	background:#000;
+}
+.textBox{
+	/* Important parameters of style start */
+	position:absolute;
+	float:left;
+	z-index:30;
+	margin:0;
+	padding:0;/* Important parameters of style end */	
+}
+.textTitle{
+	/* Important parameters of style start */
+	position:absolute;
+	float:left;
+	z-index:30;
+	margin:0;
+	/* Important parameters of style end */	
+	margin-left:10px;
+	padding:5px;
+	font-weight:bold;
+}
+/* USER STYLES */
+
+/*第一组图片*/
+#t1{
+	position: absolute;
+	top: 15%;
+	left:21%;
+	width:1060px;
+	height:1910px;
+	padding: 0 auto;
+	margin-right:auto;
+	margin-left:auto;
+}
+.user_style1 .textTitle{
+	background:#99EF7D;
+	color:#294604;
+	font-size:35px;
+	margin-top:40px;
+	padding-left:20px;
+	padding-right:20px;
+}
+.user_style1 .textBox{
+	background:rgb(63,31,65);
+	background:rgba(63, 31, 65, 0.7);
+	font-family: 楷体;
+	color:#d9c3db;
+	margin-bottom:30px;
+	font-size:26px;
+	opacity:0.8;
+}
+.user_style2 .textTitle{
+	width:38px;
+	height: 250px;
+	background:#92E6EF;
+	color:#fff;
+	font-size:30px;
+	margin-top:40px;
+	margin-left: 980px;
+	padding-left:20px;
+	padding-right:20px;
+}
+.user_style2 .textBox{
+	background:rgb(63,31,65);
+	background:rgba(63, 31, 65, 0.7);
+	font-family: 楷体;
+	color:#d9c3db;
+	margin-left: 0px;
+	font-size:26px;
+	opacity:0.8;
+}
+
+/*第二张图片*/
+#t2{
+	position: absolute;
+	top: 15%;
+	left:21%;
+	width:1060px;
+	height:1910px;
+	padding: 0 auto;
+	margin-right:auto;
+	margin-left:auto;
+}
+.user_style3 .textTitle{
+	background:rgba(225, 189, 16, 0.78);
+	color:#632626;
+	font-size:35px;
+	margin-top:40px;
+	padding-left:20px;
+	padding-right:20px;
+}
+.user_style3 .textBox{
+	background:rgb(63,31,65);
+	background:rgba(63, 31, 65, 0.7);
+	font-family: 楷体;
+	color:#d9c3db;
+	margin-bottom:30px;
+	font-size:26px;
+	opacity:0.8;
+}
+.user_style4 .popup{
+	width:250px;
+	height:50px;
+	padding:10px;
+	background:rgb(0,0,0);
+	background:rgba(225, 189, 16, 0.78);
+	color:#fff;
+	text-align:align;
+}
+/*3333333*/
+#t3{
+	position: absolute;
+	top: 15%;
+	left:21%;
+	width:1060px;
+	height:1910px;
+	padding: 0 auto;
+	margin-right:auto;
+	margin-left:auto;
+}
+.user_style5 .textTitle{
+	background:#fff;
+	color:#000;
+	font-size:35px;
+	margin-top:40px;
+	padding-left:20px;
+	padding-right:20px;
+}
+.user_style5 .textBox{
+	background:rgb(63,31,65);
+	background:rgba(63, 31, 65, 0.7);
+	font-family: 楷体;
+	color:#d9c3db;
+	margin-bottom:30px;
+	font-size:26px;
+	opacity:0.8;
+}
+/*.user_style6 .textTitle{
+	background:#fff;
+	color:#000;
+	font-size:35px;
+	margin-top:5px;
+	padding-left:20px;
+	padding-right:20px;
+}
+.user_style6 .textBox{
+	background:rgb(63,31,65);
+	background:rgba(63, 31, 65, 0.7);
+	font-family: 楷体;
+	color:#d9c3db;
+	margin-bottom:30px;
+	font-size:26px;
+	opacity:0.8;
+}*/
+.user_style6 .r_board{
+	line-height:60px;
+	color:#fff;
+	font-size:20px;
+	border-radius:4px;
+	background:#8f59ff;
+}
+/*4444*/
+#t4{
+	position: absolute;
+	top: 15%;
+	left:21%;
+	width:1060px;
+	height:1910px;
+	padding: 0 auto;
+	margin-right:auto;
+	margin-left:auto;
+}
+.user_style7 .textTitle{
+	background:#fff;
+	color:#000;
+	font-size:35px;
+	margin-top:40px;
+	padding-left:20px;
+	padding-right:20px;
+}
+.user_style7 .textBox{
+	background:rgb(63,31,65);
+	background:rgba(63, 31, 65, 0.7);
+	font-family: 楷体;
+	color:#d9c3db;
+	margin-bottom:30px;
+	font-size:26px;
+	opacity:0.8;
+}
+.user_style8 .textTitle{
+	background:#fff;
+	color:#000;
+	font-size:35px;
+	margin-top:5px;
+	padding-left:20px;
+	padding-right:20px;
+}
+.user_style8 .textBox{
+	background:rgb(63,31,65);
+	background:rgba(63, 31, 65, 0.7);
+	font-family: 楷体;
+	color:#d9c3db;
+	margin-bottom:30px;
+	font-size:26px;
+	opacity:0.8;
+}
+/*
+本代码由js代码收集并编辑整理;
+尊重他人劳动成果;
+转载请保留js代码链接 - www.jsdaima.com
+*/

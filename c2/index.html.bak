@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>爱情</title>
+    <style type="text/css">
+        body,ul,li,p {margin: 0;padding: 0}
+        ul,ol {list-style: none;}
+		a{color:white;text-decoration:none;}
+        .mulu
+        {background-color:black;width:100%;height:73px;position:absolute;top:0px;padding-top:12px;}
+        #first
+        {position:absolute;top:0px;left:300px;background-color:black;border:solid gray 2px;width:80px;height:41px;font-size:30px;font-family:楷体;padding:20px 60px;color:white;transition:0.5s;}
+        #first:hover
+        {background:#ee7700;}
+        #second{position:absolute;top:0px;left:500px;background-color:black;border:solid gray 2px;width:136px;height:41px;font-size:30px;font-family:楷体;padding:20px 60px;color:white;transition:0.5s;}
+        #second:hover{background:#ee7700;}
+        #third
+        {position:absolute;top:0px;left:700px;background-color:black;border:solid gray 2px;width:138px;height:41px;font-size:30px;font-family:楷体;padding:20px 60px;color:white;transition:0.5s;}
+        #third:hover{background:#ee7700;}
+        #forth
+        {position:absolute;top:0px;left:900px;background-color:black;border:solid gray 2px;width:138px;height:41px;font-size:30px;font-family:楷体;padding:20px 60px;color:white;transition:0.5s;}
+        #forth:hover{background:#ee7700;}
+        #fifth
+        {position:absolute;top:0px;left:1100px;background-color:black;border:solid gray 2px;width:100px;height:41px;font-size:30px;font-family:楷体;padding:20px 60px;color:white;transition:0.5s;}
+        #fifth:hover{background:#ee7700;}
+		#sixth{position:absolute;top:0px;left:1350px;}
+
+
+        .home-subjects-v2{height:850px;border-radius:20px;-moz-border-radius:3px;-webkit-border-radius:3px;border:5px solid #000000;border-color:rgba(0,0,0,.3s);overflow:hidden;width:1760px;margin-top:100px;margin-left:30px;background:#ffffff;}
+        .home-subjects-v2 ul{width:1760px;}
+        .home-subjects-v2 li{width:340px;height:850px;float:left;overflow:hidden;-webkit-transition:all .1s linear;-moz-transition:all .1s linear;-o-transition:all .1s linear;-ms-transit ion:all .1s linear;transition:all .1s linear}
+        .home-subjects-v2 li *{-webkit-transition:all .1s linear;-moz-transition:all .1s linear;-o-transition:all .1s linear;-ms-transition:all .1s linear;transition:all .1s linear}
+        .home-subjects-v2 li a{width:340px;height:850px;display:block;position:relative;cursor:pointer;text-decoration:none;overflow:hidden}
+        .home-subjects-v2 li a:hover{position:absolute}
+        .home-subjects-v2 li a:hover .mask{-ms-filter:"alpha(Opacity=0)";filter:alpha(opacity=0);opacity:0;-webkit-transition:opacity .2s ease-in;-moz-transition:opacity .2s ease-in;-o-transition:opacity .2s ease-in;-ms-transition:opacity .2s ease-in;transition:opacity .2s ease-in}
+        .home-subjects-v2 li img{height:250px;width:180px;position:absolute;top:80px;left:25px;}
+        .home-subjects-v2 li .line{height:850px;width:0;font-size:0;border-right:1px dashed #cacaca;position:absolute;right:0;top:4px}
+        .home-subjects-v2 li .info{position:absolute;top:0;left:0;width:200px;padding:4px 10px;}
+        .home-subjects-v2 li .info h3{font-size:21px;font-weight:700;}
+        .home-subjects-v2 li .info p{color:#000000;font-size:20px;overflow:hidden;line-height:22px;position:absolute;top:350px;left:20px;line-height:20px;font-family:黑体;}
+        .home-subjects-v2 li .info p.yangshi{font-size:10px;position:absolute;top:430px;left:30px;color:black;width: 250px;}
+		 .home-subjects-v2 li .info p.ling{font-size:10px;position:absolute;top:660px;left:0px;color:black;}
+       
+        .home-subjects-v2 li .info p.more{display:none}
+       
+		.mask{height:850px;width:350px;display:block;position:absolute;top:0;left:0;background:#000;-ms-filter:"alpha(Opacity=0)";filter:alpha(opacity=0);opacity:0;-webkit-transition:opacity .2s ease-in;-moz-transition:opacity .2s ease-in;-o-transition:opacity .2s ease-in;-ms-transition:opacity .2s ease-in;transition:opacity .2s ease-in;_display:none!important}
+        .home-subjects-v2 .big{width:400px}
+        .home-subjects-v2 .big a{width:400px}
+        .home-subjects-v2 .big img{width:120px;height:166px;position:absolute;top:60px;left:0px;}
+        .home-subjects-v2 .big .info{width:370px;}
+        .home-subjects-v2 .big .info h3{font-size:25px;}
+        .home-subjects-v2 .big .info p{font-size:15px;position:absolute;top:75px;left:160px;color:#9a9a9a;}
+        .home-subjects-v2 .big .info p.yangshi{font-size:17px;position:absolute;top:140px;left:140px;color:black;font-family:微软雅黑;line-height:30px;}
+		.home-subjects-v2 .big .info p.ling{font-size:16px;position:absolute;top:280px;left:0px;color:black;font-family:微软雅黑;line-height:30px;}
+        /*.home-subjects-v2 .big .info p.price{font-size:16px;padding-top:7px}
+        .home-subjects-v2 .big .info p.price strong{font-size:28px}
+        .home-subjects-v2 .big .info p.price i{font-size:16px}*/
+        .home-subjects-v2 .big .info p.more{display:block;font-size:15px;color:#ff2a5b;position:absolute;top:800px;left:300px;}
+        .home-subjects-v2 .big .mask{width:314px}
+        .home-subjects-v2:hover .mask{-ms-filter:"alpha(Opacity=15)";filter:alpha(opacity=15);opacity:.15;-webkit-transition:opacity .2s ease-in;-moz-transition:opacity .2s ease-in;-o-transition:opacity .2s ease-in;-ms-transition:opacity .2s ease-in;transition:opacity .2s ease-in}
+    </style>
+    <script type="text/javascript" src="jquery-1.9.1.js"></script>
+</head>
+<body>
+
+    <div class="mulu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/top.jpg" style=" width :88px ;position:absolute;left:60px;top:0px;">
+        <div id="first"><a href="../index.html">首页</a></div>
+        <div id="second"><a href="../c1/index.html">高考</a></div>
+		<div id="third"><a href="#">爱情</a></div>
+		<div id="forth"><a href="../c3/index.html">迷茫</a></div>
+		<div id="fifth"><a href="../c5/index.html">在河海</a></div>
+		<div id = "sixth"><a href=""><img src = "image/1_120801014131_1.png"></a></div>
+		
+    </div>
+	
+    <div id="subject" class="home-subjects-v2">
+    <ul>
+        <li>
+            <a>
+                <img src="image/naxienian2.jpg">
+                <div class="info">
+                <h3 style="color:#f62368">那些年我们一起追的女孩</h3>
+                <p>青春的爱情本来就是令人唏嘘的</p>
+				
+
+
+　　            <p class="yangshi">《那些年，我们一起追的女孩》是群星瑞智艺能有限公司和台湾索尼音乐娱乐股份有限公司联合出品的一部青春爱情电影，柴智屏监制，作家九把刀自编自导，陈妍希、柯震东等主演。<br>该片讲述了柯景腾和沈佳宜之间令人唏嘘的爱情故事；该片于2011年8月19日在中国台湾上映后，获得了1亿7746万新台币的票房，并于2012年1月6日在中国内地上映，获得了7580万人民币的票房且创下了中国台湾电影在中国内地票房的新纪录。</p>
+                
+                <p class="more">查看更多 &gt; </p>
+                </div>
+                <s class="line"></s> <i class="mask"></i>
+            </a>
+        </li>
+        <li >
+            <a>
+                <img src="image/congcong.jpg">
+                <div class="info">
+                <h3 style="color:#f62368">匆匆那年</h3>
+                <p>如果再见不能红着眼，是否还能红着脸</p>
+                <p class="yangshi">《匆匆那年》是北京小马奔腾影业、引力影视、光线影业、北京凤凰联动影视文化 2014年联合出品的校园爱情片，改编自九夜茴同名小说。该影片由张一白执导，彭于晏、倪妮、郑恺、魏晨、张子萱、陈赫等人主演。<br>
+该影片讲述了阳光少年陈寻、痴心女孩方茴、温情暖男乔燃、纯情备胎赵烨、豪放女神林嘉茉这群死党跨越十五年的青春、记忆与友情的故事。年近三十的陈寻在90后女孩七七追问下，回忆起了自己与方茴的同居时光。 <br>当年近而立的陈寻再次回忆这段纯真感情时加入了思考和反省。这既是陈寻的青春记忆，也是属于80后整整一代人的匆匆那年。<p> 
+				
+                <p class="more">查看更多 &gt; </p>
+                </div>
+                <s class="line"></s>    <i class="mask"></i>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="image/zhiqingchun.jpg">
+                <div class="info">
+                <h3 style="color:#f62368">致我们终将逝去的青春</h3>
+                <p>也许这就是国产爱情</p>
+                <p class="yangshi">自喻为“玉面小飞龙”的郑微，怀着对邻家哥哥林静的爱意考入大学。当她联系林静的时候，却发现林静不告而别，匆匆出国留学。生性豁达的她与同宿舍女生之间结下了深厚的友谊，并开始享受着大学时代的快乐生活，直到她意外爱上了学长陈孝正。而刻板敏感自尊的陈孝正却在毕业之际又选择了出国留学。<br>
+几年后，林静和陈孝正先后归来再次走进郑微的生活，而美丽动人的好友阮莞意外离世，促使郑微重新思考自己的人生道路。在经历了与陈孝正跌宕起伏的爱和林静的细心呵护之后，郑微明白了什么才是平凡的幸福，并最终选择了更加成熟阳光的生活。</p>
+				
+                </p>
+                <p class="more">查看更多 &gt; </p>
+                </div>
+                <s class="line"></s>    <i class="mask"></i>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="image/sheide.jpg">
+                <div class="info">
+                <h3 style="color:#f62368">谁的青春不迷茫</h3>
+                <p>我们都有留恋，只是留恋，都错开了时间</p>
+                <p class="yangshi">人生一直处于辉煌巅峰的林天娇（郭姝彤饰），面对人生最重要的一次高考加分考试却重感冒了，情急之下她想通过作弊的方式顺利过关。没想到作弊也是需要技巧的，作弊失误的林天娇被高翔（白敬亭饰）看到，掉在地上的课本被老师误解这是高翔所为，高翔选择为林天娇挡了一刀。林天娇并不知道，她的人生的轨道从那一刻开始走向了另外一根轨道。毕竟高翔是她整个学习生涯中最反感的人。和自己讨厌的人扯上关系之后，林天娇用尽了各种方式想要摆脱高翔。倒不是谁吸引着谁，而是少年时大多数的气急败坏不是因为真的讨厌，而是因为害怕别人的眼光，害怕自己会变得不一样，害怕有人进入内心，害怕看不到前方而恐慌。在这个过程中，两个人互相拆台，林天娇发誓要拼个你死我活。</p>
+				
+                <p class="more">查看更多 &gt; </p>
+                </div>
+                <s class="line"></s><i class="mask"></i>
+            </a>
+        </li>
+        <li class="big">
+            <a>
+                <img src="image/heyisheng.jpeg">
+                <div class="info">
+                <h3 style="color:#f62368">何以笙箫默</h3>
+                <p>既然琴瑟起，何以笙箫默</p>
+
+              	<p class="yangshi">大学时代的赵默笙对C大法学系
+ 大才子何以琛一见倾心，开朗直率的她“死缠烂打”地倒追，与众不同的方式吸引了何以琛的目光，一段纯纯的校园爱情悄悄滋生。然而，何以琛寄养家庭的妹妹何以玫，鼓起勇气向赵默笙宣战。当赵默笙去找何以琛证实，没想到竟然得到何以琛冷酷的回应。误以为何以琛和何以玫在一起的赵默笙，落寞地服从父亲的安排，前往美国深造。七年后，成为摄影师的赵默笙回来了，再次遇到那个无法忘却的男人何以琛。这对分手七年的爱人，横在他们中间的，有赵默笙因生活所迫在美国已结婚的事实，有痴情前夫应晖，更有多年前两家父亲的恩怨，但这些并没有让这对分手的恋人继续错过，反而在各种误会及现实考验中更加了解了这些年来彼此爱的心绪。</p>
+				
+                <p class="more">查看更多 &gt; </p>
+                </div>
+                <i class="mask"></i>
+            </a>
+        </li>
+    </ul>
+    </div>
+    <script type="text/javascript">
+        function mouseover(e){
+            var list = $('#subject li');
+            var target = $(e.target).parents('li');
+
+            list.removeClass('big');
+            target.addClass('big');
+        }
+
+        (function(){
+            var outer = $('#subject');
+            outer.find('li').on('mouseover', mouseover);
+        })()
+        
+    </script>
+</body>
+</html>
